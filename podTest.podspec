@@ -3,10 +3,8 @@ Pod::Spec.new do |s|
   s.version  = '0.1.0'
   s.license  = 'MIT'
   s.summary  = 'A delightful iOS  framework.'
-  s.homepage = 'https://github.com/AFNetworking/AFNetworking'
-  s.social_media_url = 'https://twitter.com/AFNetworking'
-  s.authors  = { 'Mattt Thompson' => 'm@mattt.me' }
-  s.source   = { :git => 'https://github.com/AFNetworking/AFNetworking.git', :tag => s.version, :submodules => true }
+  s.homepage = 'https://github.com/xionggithub/podTest'
+  s.source   = { :git => 'https://github.com/xionggithub/podTest.git', :tag => "#{s.version}"}
   s.requires_arc = true
   
   s.public_header_files = 'AFNetworking/AFNetworking.h'
