@@ -4,6 +4,7 @@ Pod::Spec.new do |s|
   s.license  = 'MIT'
   s.summary  = 'A delightful iOS  framework.'
   s.homepage = 'https://github.com/xionggithub/podTest'
+  s.author             = { "xiongxianti" => "1273040577@qq.com" }
   s.source   = { :git => 'https://github.com/xionggithub/podTest.git', :tag => "#{s.version}"}
   s.requires_arc = true
   
