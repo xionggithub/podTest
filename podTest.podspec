@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'podTest'
-  s.version  = '3.1.0'
+  s.version  = '0.1.0'
   s.license  = 'MIT'
   s.summary  = 'A delightful iOS  framework.'
   s.homepage = 'https://github.com/AFNetworking/AFNetworking'
