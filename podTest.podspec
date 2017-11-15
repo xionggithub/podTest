@@ -8,25 +8,25 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/xionggithub/podTest.git', :tag => "#{s.version}"}
   s.requires_arc = true
   
-  s.source_files  = 'podTest/*.{h,cpp,txt}'
+  s.source_files  = 'podTest/*.{h,m,cpp,txt}'
     
   s.ios.deployment_target = '7.0'
   
   s.subspec 'Serialization' do |ss|
-    ss.source_files  = 'podTest/*.{h,cpp,txt}'
+    ss.source_files  = 'podTest/*.{h,m,cpp,txt}'
     ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
     ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
     ss.osx.frameworks = 'CoreServices'
   end
 
   s.subspec 'Security' do |ss|
-    ss.source_files  = 'podTest/*.{h,cpp,txt}'
+    ss.source_files  = 'podTest/*.{h,m,cpp,txt}'
     ss.frameworks = 'Security'
   end
 
   s.subspec 'Reachability' do |ss|
     ss.ios.deployment_target = '7.0'
-    ss.source_files  = 'podTest/*.{h,cpp,txt}'
+    ss.source_files  = 'podTest/Reachability/*.{h,m,cpp,txt}'
     ss.frameworks = 'SystemConfiguration'
   end
 
@@ -36,11 +36,11 @@ Pod::Spec.new do |s|
 
     ss.dependency 'podTest/Security'
 
-    ss.source_files  = 'podTest/*.{h,cpp,txt}'
+    ss.source_files  = 'podTest/*.{h,m,cpp,txt}'
   end
 
   s.subspec 'UIKit' do |ss|
     ss.ios.deployment_target = '7.0'
-    ss.source_files  = 'podTest/*.{h,cpp,txt}'
+    ss.source_files  = 'podTest/*.{h,m,cpp,txt}'
   end
 end
